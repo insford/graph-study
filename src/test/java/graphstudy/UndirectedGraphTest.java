@@ -3,6 +3,7 @@ package graphstudy;
 
 import static org.junit.Assert.assertEquals;
 
+import graphstudy.kchuh.AdjacencyListsUndirectedGraph;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -22,6 +23,7 @@ public class UndirectedGraphTest {
         sourceGraph = TestUtils.createRandomGraph(100);
         targetGraphs = new ArrayList<>();
         targetGraphs.add(createGraph(sourceGraph, new graphstudy.insford.UndirectedGraph()));
+        targetGraphs.add(createGraph(sourceGraph, new AdjacencyListsUndirectedGraph()));
     }
 
     private UndirectedGraph createGraph(Graph sourceGraph, UndirectedGraph graph) {
