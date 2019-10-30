@@ -23,6 +23,7 @@ public class UndirectedGraphTest {
         sourceGraph = TestUtils.createRandomGraph(100);
         targetGraphs = new ArrayList<>();
         targetGraphs.add(createGraph(sourceGraph, new graphstudy.insford.UndirectedGraph()));
+        targetGraphs.add(createGraph(sourceGraph, new graphstudy.dmgkeke.UndirectedGraph()));
         targetGraphs.add(createGraph(sourceGraph, new AdjacencyListsUndirectedGraph()));
     }
 
